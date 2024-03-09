@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DataPendaftarController;
+use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\VerifikasiBerkas;
 use Illuminate\Support\Facades\Auth;
 
@@ -34,3 +35,7 @@ Route::post('/cariBack', [DataPendaftarController::class, 'cariBack'])->middlewa
 
 // PROSES VERIFIKASI
 Route::put('/proses_verifikasi', [VerifikasiBerkas::class, 'proses_verifikasi'])->name('proses_verifikasi')->middleware('isLogin');
+
+
+//Buat route register
+Route::get('/register', [RegisterController::class, 'register'])->name('register')->middleware('isGuest');
