@@ -51,6 +51,12 @@
                 </a>
             </li>
             <li class="nav-item ">
+                <a href="{{ route('upload_berkas') }}" class="nav-link">
+                    <i class="link-icon" data-feather="box"></i>
+                    <span class="link-title">6. Upload Berkas*</span>
+                </a>
+            </li>
+            <!-- <li class="nav-item ">
                 <a href="{{ route('upload_berkas_akta') }}" class="nav-link">
                     <i class="link-icon" data-feather="box"></i>
                     <span class="link-title">6. Upload Berkas Akta*</span>
@@ -91,11 +97,11 @@
                     <i class="link-icon" data-feather="box"></i>
                     <span class="link-title">12. Upload Berkas Foto Siswa*</span>
                 </a>
-            </li>
+            </li>-->
             <li class="nav-item ">
                 <a href="{{ route('upload_berkas_kip') }}" class="nav-link">
                     <i class="link-icon" data-feather="box"></i>
-                    <span class="link-title">13. Upload Berkas KIP*</span>
+                    <span class="link-title">7 Upload Berkas KIP*</span>
                 </a>
             </li>
 

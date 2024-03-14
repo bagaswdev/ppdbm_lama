@@ -60,3 +60,4 @@ Route::get('/upload_berkas_kk_wali', [PendaftaranController::class, 'upload_berk
 Route::get('/upload_berkas_nisn', [PendaftaranController::class, 'upload_berkas_nisn'])->name('upload_berkas_nisn');
 Route::get('/upload_berkas_foto', [PendaftaranController::class, 'upload_berkas_foto'])->name('upload_berkas_foto');
 Route::get('/upload_berkas_kip', [PendaftaranController::class, 'upload_berkas_kip'])->name('upload_berkas_kip');
+Route::get('/upload_berkas', [PendaftaranController::class, 'upload_berkas'])->name('upload_berkas');
