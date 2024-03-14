@@ -26,6 +26,11 @@ class PendaftaranController extends Controller
         return view('pendaftaran.form_data_wali');
     }
 
+    public function upload_berkas()
+    {
+        return view('pendaftaran.upload_berkas');
+    }
+
     public function form_data_raport()
     {
         return view('pendaftaran.form_data_raport');
@@ -34,6 +39,11 @@ class PendaftaranController extends Controller
     public function upload_berkas_akta()
     {
         return view('pendaftaran.upload_berkas_akta');
+    }
+
+    public function upload_berkas_kk_siswa()
+    {
+        return view('pendaftaran.upload_berkas_kk_siswa');
     }
 
     public function upload_berkas_kk_ayah_kandung()
