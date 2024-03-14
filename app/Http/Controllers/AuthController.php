@@ -62,12 +62,11 @@ class AuthController extends Controller
     public function otentikasi(Request $request)
     {
         $credentials = $request->validate([
-            'email' => ['required', 'email', 'max:255'],
-            'password' => ['required', 'min:5']
+            'nik_calon_siswa' => ['required', 'email', 'max:16'],
+            'password_calon_siswa' => ['required', 'min:5']
         ], [
-            'email.required' => 'Email wajib diisi',
-            'email.email' => 'Email harus benar',
-            'email.max' => 'Email tidak boleh melebihi :max karakter',
+            'nik.required' => 'nik wajib diisi',
+            'nik.max' => 'nik tidak boleh melebihi :max karakter',
             'password.required' => 'Password wajib diisi',
             'password.min' => 'Password minimal harus :min karakter',
         ]);

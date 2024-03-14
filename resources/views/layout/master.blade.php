@@ -52,6 +52,10 @@ License: For each use you must have a valid license purchased only from above li
     <!-- plugin css -->
     <link href="{{ asset('assets/fonts/feather-font/css/iconfont.css') }}" rel="stylesheet" />
     <link href="{{ asset('assets/plugins/perfect-scrollbar/perfect-scrollbar.css') }}" rel="stylesheet" />
+
+    {{-- upload --}}
+    <link href="https://www.nobleui.com/laravel/template/demo1/assets/plugins/dropify/css/dropify.min.css"
+        rel="stylesheet" />
     <!-- end plugin css -->
 
     @stack('plugin-styles')
@@ -88,6 +92,11 @@ License: For each use you must have a valid license purchased only from above li
     <script src="{{ asset('assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <!-- end base js -->
+
+    {{-- upload --}}
+    <script src="https://www.nobleui.com/laravel/template/demo1/assets/plugins/dropify/js/dropify.min.js"></script>
+    <link href="https://www.nobleui.com/laravel/template/demo1/assets/plugins/dropify/css/dropify.min.css"
+        rel="stylesheet" />
 
     <!-- plugin js -->
     @stack('plugin-scripts')
