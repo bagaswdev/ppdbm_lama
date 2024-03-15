@@ -278,7 +278,7 @@
                             @csrf
 
                             <div class="card-body">
-                                <h4 class="mb-4">Upload Berkas KK Siswa Di bawah ini</h4>
+                                <h4 class="mb-4">Upload Berkas KK Calon Peserta Didik Di bawah ini</h4>
 
                                 <div class="row">
                                     <div class="col-md-12 stretch-card">

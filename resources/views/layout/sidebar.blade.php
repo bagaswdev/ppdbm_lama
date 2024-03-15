@@ -23,7 +23,7 @@
             <li class="nav-item ">
                 <a href="{{ route('form_data_siswa') }}" class="nav-link">
                     <i class="link-icon" data-feather="box"></i>
-                    <span class="link-title">1. Data Siswa*</span>
+                    <span class="link-title">1. Data Calon Peserta Didik*</span>
                 </a>
             </li>
             <li class="nav-item ">
