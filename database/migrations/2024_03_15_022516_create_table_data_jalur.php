@@ -11,11 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('table_data_status_siswa', function (Blueprint $table) {
-            $table->id('tb_data_status_siswa_id');
-            $table->bigInteger('tb_data_siswa_id');
-            $table->bigInteger('tb_data_jalur_id');
-            $table->string('tb_data_status_siswa_status');
+        Schema::create('table_data_jalur', function (Blueprint $table) {
+            $table->id('tb_data_jalur_id');
+            $table->string('tb_data_jalur_nama');
             $table->timestamps();
         });
     }
@@ -25,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('table_data_status_siswa');
+        Schema::dropIfExists('table_data_jalur');
     }
 };
