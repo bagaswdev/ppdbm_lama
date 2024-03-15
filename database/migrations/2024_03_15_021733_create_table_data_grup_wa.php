@@ -11,11 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('table_data_status_siswa', function (Blueprint $table) {
-            $table->id('tb_data_status_siswa_id');
+        Schema::create('table_data_grup_wa', function (Blueprint $table) {
+            $table->id('tb_data_grup_wa_id');
             $table->bigInteger('tb_data_siswa_id');
-            $table->bigInteger('tb_data_jalur_id');
-            $table->string('tb_data_status_siswa_status');
+            $table->string('tb_data_grup_wa_file');
+            $table->string('tb_data_grup_wa_status');
             $table->timestamps();
         });
     }
@@ -25,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('table_data_status_siswa');
+        Schema::dropIfExists('table_data_grup_wa');
     }
 };
