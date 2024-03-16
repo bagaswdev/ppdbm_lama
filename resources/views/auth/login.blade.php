@@ -69,17 +69,16 @@
         <div class="page-content d-flex align-items-center justify-content-center">
 
             <div class="row w-100 mx-0 auth-page">
-                <div class="col-md-8 col-xl-6 mx-auto">
+                <div class="col-md-9 col-xl-9 mx-auto">
                     <div class="card">
                         <div class="row">
                             <div class="col-md-4 pe-md-0">
                                 <div class="auth-side-wrapper"
-                                    style="background-image: url(https://www.nobleui.com/laravel/template/demo1/assets/images/photos/img6.jpg)">
-
+                                    style="background-image: url({{ asset('bgweb/bgm1new.jpg') }})">
                                 </div>
                             </div>
                             <div class="col-md-8 ps-md-0">
-                                <div class="auth-form-wrapper px-4 py-5">
+                                <div class="auth-form-wrapper px-6 py-5">
                                     <a href="#" class="noble-ui-logo d-block mb-2">PPDBM<span> MTsN 1 Kota
                                             Malang</span></a>
                                     <h5 class="text-muted fw-normal mb-4">LOGIN AKUN </h5>
@@ -109,16 +108,14 @@
                                         @csrf
 
                                         <div class="mb-3">
-                                            <label for="nik_calon_siswa" class="form-label">NIK Calon Siswa</label>
-                                            <input type="text" class="form-control" id="nik_calon_siswa"
-                                                name="nik_calon_siswa" autocomplete="NIK Calon Siswa"
+                                            <label for="nik_peserta_didik" class="form-label">NIK Peserta Didik</label>
+                                            <input type="text" class="form-control" id="nik_peserta_didik"
+                                                name="nik_peserta_didik" autocomplete="NIK Calon Siswa"
                                                 placeholder="3508672898998881">
                                         </div>
                                         <div class="mb-3">
-                                            <label for="password_calon_siswa" class="form-label">Password Calon
-                                                Siswa</label>
-                                            <input type="password_calon_siswa" class="form-control"
-                                                id="password_calon_siswa" name="password_calon_siswa"
+                                            <label for="password" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="password" name="password"
                                                 autocomplete="current-password" placeholder="Password">
                                         </div>
 

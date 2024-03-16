@@ -5,6 +5,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DataPendaftarController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PemilihanJalurController;
 use App\Http\Controllers\PendaftaranController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\VerifikasiBerkas;
@@ -39,10 +40,17 @@ Route::post('/cariBack', [DataPendaftarController::class, 'cariBack'])->middlewa
 // PROSES VERIFIKASI
 Route::put('/proses_verifikasi', [VerifikasiBerkas::class, 'proses_verifikasi'])->name('proses_verifikasi')->middleware('isLogin');
 
-//Proses authntikasi
-Route::get('/register', [RegisterController::class, 'register'])->name('register')->middleware('isGuest');
+//Proses authentikasi
 Route::get('/', [AuthController::class, 'login'])->name('login')->middleware('isGuest');
+Route::get('/register', [RegisterController::class, 'register'])->name('register')->middleware('isGuest');
 Route::post('/ProsesOtentikasi', [AuthController::class, 'otentikasi'])->name('otentikasi')->middleware('isGuest');
+
+// PROSES PEMILIHAN JALUR
+Route::get('/PemilihanJalur', [PemilihanJalurController::class, 'PemilihanJalur'])->name('PemilihanJalur')->middleware('isGuest');
+Route::post('/PemilihanJalurOpsiReguler', [PemilihanJalurController::class, 'PemilihanJalurOpsiReguler'])->name('PemilihanJalurOpsiReguler')->middleware('isGuest');
+Route::post('/CekPemilihanJalurOpsiRegulerJawaban', [PemilihanJalurController::class, 'CekPemilihanJalurOpsiRegulerJawaban'])->name('CekPemilihanJalurOpsiRegulerJawaban')->middleware('isGuest');
+Route::post('/HasilPemilihanJalurOpsiRegulerJawaban', [PemilihanJalurController::class, 'HasilPemilihanJalurOpsiRegulerJawaban'])->name('HasilPemilihanJalurOpsiRegulerJawaban')->middleware('isGuest');
+
 
 //Proses Halaman Dashboard
 // Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard')->middleware('isLogin');

@@ -52,9 +52,13 @@
             <div class="col-md-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
-                        <h4>Selamat Datang</h4>
-                        <p>Silakan mengisi setiap form untuk melakukan pendaftaran</p>
+                        <h4>Selamat Datang John Doe</h4>
+                        <p class="my-2">Anda mendaftar melalui jalur <span class="badge bg-success mb-4">Reguler</span>.
+                            Silakan mengisi setiap form
+                            untuk melakukan
+                            pendaftaran</p>
                         {{-- <h4 class="mb-3 mb-md-0">Selamat Datang Bapak/Ibu {{ Auth::user()->username }}</h4> --}}
+
                     </div>
                 </div>
             </div>
