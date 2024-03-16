@@ -15,7 +15,6 @@
                 <div class="card-body">
                     <h4>Selamat Datang</h4>
                     <p>Silakan mengisi setiap form untuk melakukan pendaftaran</p>
-                    {{-- <h4 class="mb-3 mb-md-0">Selamat Datang Bapak/Ibu {{ Auth::user()->username }}</h4> --}}
                 </div>
             </div>
         </div>
