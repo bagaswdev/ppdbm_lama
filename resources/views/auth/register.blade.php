@@ -1,11 +1,11 @@
 @extends('layout.master2')
 
 @section('content')
-<div class="main-wrapper" id="app">
-    <div class="page-wrapper full-page">
-        <div class="page-content d-flex align-items-center justify-content-center">
+    <div class="main-wrapper" id="app">
+        <div class="page-wrapper full-page">
+            <div class="page-content d-flex align-items-center justify-content-center">
 
-            <div class="row w-100 mx-0 auth-page">
+                <div class="row w-100 mx-0 auth-page">
                 <div class="col-md-9 col-xl-9 mx-auto">
                     <div class="card">
                         <div class="row">
@@ -13,9 +13,10 @@
                                 <div class="auth-side-wrapper"
                                     style="background-image: url({{ asset('bgweb/bgm1new.jpg') }})">
 
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-8 ps-md-0">
+                                <div class="col-md-8 ps-md-0">
                                 <div class="auth-form-wrapper px-6 py-5">
                                     <a href="#" class="noble-ui-logo d-block mb-2">PPDBM<span> MTsN 1 Kota
                                             Malang</span></a>
@@ -50,14 +51,14 @@
                                             akun? KLIK DISINI
                                             UNTUK LOGIN</a>
                                     </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
-</div>
 @endsection

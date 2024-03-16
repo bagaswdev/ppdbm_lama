@@ -31,6 +31,7 @@
         </div>
     </div>
 
+    <!-- Upload Berkas Foto Siswa Di bawah ini -->
     <div class="row">
         <div class="col-md-12 col-xl-12 stretch-card">
             <div class="row flex-grow-1">
@@ -106,28 +107,7 @@
     </div>
     </div> <!-- row -->
 
-    <div class="d-flex justify-content-between align-items-center flex-wrap grid-margin">
-
-
-        <div>
-            @if (session('success'))
-                <div class="alert alert-success">
-                    {{ session('success') }}
-                </div>
-            @endif
-
-            @if ($errors->any())
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
-        </div>
-    </div>
-
+    <!-- Upload Berkas Akta Di bawah ini -->
     <div class="row">
         <div class="col-md-12 col-xl-12 stretch-card">
             <div class="row flex-grow-1">
@@ -198,28 +178,7 @@
     </div>
     </div> <!-- row -->
 
-    <div class="d-flex justify-content-between align-items-center flex-wrap grid-margin">
-
-
-        <div>
-            @if (session('success'))
-                <div class="alert alert-success">
-                    {{ session('success') }}
-                </div>
-            @endif
-
-            @if ($errors->any())
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
-        </div>
-    </div>
-
+    <!-- Upload Berkas NISN Di bawah ini -->
     <div class="row">
         <div class="col-md-12 col-xl-12 stretch-card">
             <div class="row flex-grow-1">
@@ -293,28 +252,7 @@
     </div>
     </div> <!-- row -->
 
-    <div class="d-flex justify-content-between align-items-center flex-wrap grid-margin">
-
-
-        <div>
-            @if (session('success'))
-                <div class="alert alert-success">
-                    {{ session('success') }}
-                </div>
-            @endif
-
-            @if ($errors->any())
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
-        </div>
-    </div>
-
+    <!-- Upload Berkas KK Siswa Di bawah ini -->
     <div class="row">
         <div class="col-md-12 col-xl-12 stretch-card">
             <div class="row flex-grow-1">
@@ -340,7 +278,7 @@
                             @csrf
 
                             <div class="card-body">
-                                <h4 class="mb-4">Upload Berkas KK Siswa Di bawah ini</h4>
+                                <h4 class="mb-4">Upload Berkas KK Calon Peserta Didik Di bawah ini</h4>
 
                                 <div class="row">
                                     <div class="col-md-12 stretch-card">
@@ -387,28 +325,7 @@
     </div>
     </div> <!-- row -->
 
-    <div class="d-flex justify-content-between align-items-center flex-wrap grid-margin">
-
-
-        <div>
-            @if (session('success'))
-                <div class="alert alert-success">
-                    {{ session('success') }}
-                </div>
-            @endif
-
-            @if ($errors->any())
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
-        </div>
-    </div>
-
+    <!-- Upload Berkas KK Ayah Kandung Di bawah ini -->
     <div class="row">
         <div class="col-md-12 col-xl-12 stretch-card">
             <div class="row flex-grow-1">
@@ -481,28 +398,7 @@
     </div>
     </div> <!-- row -->
 
-    <div class="d-flex justify-content-between align-items-center flex-wrap grid-margin">
-
-
-        <div>
-            @if (session('success'))
-                <div class="alert alert-success">
-                    {{ session('success') }}
-                </div>
-            @endif
-
-            @if ($errors->any())
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
-        </div>
-    </div>
-
+    <!-- Upload Berkas KK Ibu Kandung Di bawah ini -->
     <div class="row">
         <div class="col-md-12 col-xl-12 stretch-card">
             <div class="row flex-grow-1">
@@ -575,28 +471,7 @@
     </div>
     </div> <!-- row -->
 
-    <div class="d-flex justify-content-between align-items-center flex-wrap grid-margin">
-
-
-        <div>
-            @if (session('success'))
-                <div class="alert alert-success">
-                    {{ session('success') }}
-                </div>
-            @endif
-
-            @if ($errors->any())
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
-        </div>
-    </div>
-
+    <!-- Upload Berkas KK Wali Di bawah ini -->
     <div class="row">
         <div class="col-md-12 col-xl-12 stretch-card">
             <div class="row flex-grow-1">
@@ -629,6 +504,226 @@
                                         <div class="card">
                                             <div class="card-body">
                                                 <h6 class="card-title">Upload Berkas KK Wali</h6>
+                                                <div class="dropify-wrapper">
+                                                    <div class="dropify-message"><span class="file-icon">
+                                                            <p>Drag and drop a file here or click</p>
+                                                        </span>
+                                                        <p class="dropify-error">Ooops, something wrong appended.</p>
+                                                    </div>
+                                                    <div class="dropify-loader" style="display: none;"></div>
+                                                    <div class="dropify-errors-container">
+                                                        <ul></ul>
+                                                    </div><input type="file" id="myDropify"
+                                                        name="tb_data_kk_wali_file"><button type="button"
+                                                        class="dropify-clear">Remove</button>
+                                                    <div class="dropify-preview" style="display: none;"><span
+                                                            class="dropify-render"></span>
+                                                        <div class="dropify-infos">
+                                                            <div class="dropify-infos-inner">
+                                                                <p class="dropify-filename"><span
+                                                                        class="file-icon"></span>
+                                                                    <span class="dropify-filename-inner">WhatsApp Image
+                                                                        2024-03-01 at
+                                                                        19.59.18_6bbe3903.jpg</span>
+                                                                </p>
+                                                                <p class="dropify-infos-message">Drag and drop or click to
+                                                                    replace</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div> <!-- row -->
+
+    <!-- Upload Berkas Surat Keabsahan Data Di bawah ini -->
+    <div class="row">
+        <div class="col-md-12 col-xl-12 stretch-card">
+            <div class="row flex-grow-1">
+                <div class="col-md-12 grid-margin stretch-card">
+                    <div class="card">
+
+                        <form action="#" method="POST">
+                            @if (session('success'))
+                                <div class="alert alert-success">
+                                    {{ session('success') }}
+                                </div>
+                            @endif
+
+                            @if ($errors->any())
+                                <div class="alert alert-danger">
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            @endif
+                            @csrf
+
+                            <div class="card-body">
+                                <h4 class="mb-4">Upload Berkas Surat Keabsahan Data Di bawah ini</h4>
+
+                                <div class="row">
+                                    <div class="col-md-12 stretch-card">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h6 class="card-title">Upload Berkas Surat Keabsahan Data</h6>
+                                                <div class="dropify-wrapper">
+                                                    <div class="dropify-message"><span class="file-icon">
+                                                            <p>Drag and drop a file here or click</p>
+                                                        </span>
+                                                        <p class="dropify-error">Ooops, something wrong appended.</p>
+                                                    </div>
+                                                    <div class="dropify-loader" style="display: none;"></div>
+                                                    <div class="dropify-errors-container">
+                                                        <ul></ul>
+                                                    </div><input type="file" id="myDropify"
+                                                        name="tb_data_kk_wali_file"><button type="button"
+                                                        class="dropify-clear">Remove</button>
+                                                    <div class="dropify-preview" style="display: none;"><span
+                                                            class="dropify-render"></span>
+                                                        <div class="dropify-infos">
+                                                            <div class="dropify-infos-inner">
+                                                                <p class="dropify-filename"><span
+                                                                        class="file-icon"></span>
+                                                                    <span class="dropify-filename-inner">WhatsApp Image
+                                                                        2024-03-01 at
+                                                                        19.59.18_6bbe3903.jpg</span>
+                                                                </p>
+                                                                <p class="dropify-infos-message">Drag and drop or click to
+                                                                    replace</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div> <!-- row -->
+
+    <!-- Upload Berkas Surat Keterangan Kelakuan Baik Di bawah ini -->
+    <div class="row">
+        <div class="col-md-12 col-xl-12 stretch-card">
+            <div class="row flex-grow-1">
+                <div class="col-md-12 grid-margin stretch-card">
+                    <div class="card">
+
+                        <form action="#" method="POST">
+                            @if (session('success'))
+                                <div class="alert alert-success">
+                                    {{ session('success') }}
+                                </div>
+                            @endif
+
+                            @if ($errors->any())
+                                <div class="alert alert-danger">
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            @endif
+                            @csrf
+
+                            <div class="card-body">
+                                <h4 class="mb-4">Upload Berkas Surat Keterangan Kelakuan Baik Di bawah ini</h4>
+
+                                <div class="row">
+                                    <div class="col-md-12 stretch-card">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h6 class="card-title">Upload Berkas Surat Keterangan Kelakuan Baik</h6>
+                                                <div class="dropify-wrapper">
+                                                    <div class="dropify-message"><span class="file-icon">
+                                                            <p>Drag and drop a file here or click</p>
+                                                        </span>
+                                                        <p class="dropify-error">Ooops, something wrong appended.</p>
+                                                    </div>
+                                                    <div class="dropify-loader" style="display: none;"></div>
+                                                    <div class="dropify-errors-container">
+                                                        <ul></ul>
+                                                    </div><input type="file" id="myDropify"
+                                                        name="tb_data_kk_wali_file"><button type="button"
+                                                        class="dropify-clear">Remove</button>
+                                                    <div class="dropify-preview" style="display: none;"><span
+                                                            class="dropify-render"></span>
+                                                        <div class="dropify-infos">
+                                                            <div class="dropify-infos-inner">
+                                                                <p class="dropify-filename"><span
+                                                                        class="file-icon"></span>
+                                                                    <span class="dropify-filename-inner">WhatsApp Image
+                                                                        2024-03-01 at
+                                                                        19.59.18_6bbe3903.jpg</span>
+                                                                </p>
+                                                                <p class="dropify-infos-message">Drag and drop or click to
+                                                                    replace</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div> <!-- row -->
+
+    <!-- Upload Berkas WhatsApp Di bawah ini -->
+    <div class="row">
+        <div class="col-md-12 col-xl-12 stretch-card">
+            <div class="row flex-grow-1">
+                <div class="col-md-12 grid-margin stretch-card">
+                    <div class="card">
+
+                        <form action="#" method="POST">
+                            @if (session('success'))
+                                <div class="alert alert-success">
+                                    {{ session('success') }}
+                                </div>
+                            @endif
+
+                            @if ($errors->any())
+                                <div class="alert alert-danger">
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            @endif
+                            @csrf
+
+                            <div class="card-body">
+                                <h4 class="mb-4">Upload Berkas Bukti Screenshot Gabung Grup Whatsapp Di bawah ini</h4>
+
+                                <div class="row">
+                                    <div class="col-md-12 stretch-card">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h6 class="card-title">Upload Berkas Bukti Screenshot Gabung Grup Whatsapp
+                                                </h6>
                                                 <div class="dropify-wrapper">
                                                     <div class="dropify-message"><span class="file-icon">
                                                             <p>Drag and drop a file here or click</p>
